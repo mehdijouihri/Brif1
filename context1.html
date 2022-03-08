@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <center>
+  <body >
+    <!-- identification -->
+    <form>
+      <fieldset style="width: fit-content;">
+      <p>
+        <label for="prenom">etrez votre Prenom :</label>
+        <input
+          type="text"
+          id="prenom"
+          name="prenom"
+          required
+          pattern="[a-z]
+          {25}
+          placeholder="votre prenom"
+        />
+      </p>
+      <p>
+        <label for="name">etrez votre Nom :</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          pattern="[0-9]
+          {15}
+          placeholder="votre nom"
+        />
+      </p>
+      <p>
+        <label for="age">etrez votre Age :</label>
+        <input type="number" id="age" name="age" required min="0" max="125" />
+      </p>
+    </fieldset>
+      <!-- radios-->
+      <fieldset style="width: fit-content;">
+      <p>
+        <label> SEXE </label>
+        <input type="radio" id="Homme" name="text" value="Homme" />
+        <label for="Homme">Homme</label>
+        <input type="radio" id="femme" name="text" value="femme" />
+        <label for="Homme">Femme</label>
+      </p>
+      <p>
+        <label> Adresse mail : </label>
+        <input type="email" id="email" placeholder="entrez votre email" />
+      </p>
+      <p>
+        <label> Code postale : </label>
+        <input
+          type="text"
+          id="codepostal"
+          pattern="[0-9] 
+          {5}
+          placeholder="00000"
+        />
+        <label for="ville"> Ville: </label>
+        <select nom="ville" id="pays">
+          <option value="lille">lille</option>
+          <option value="paris">paris</option>
+          <option value="valencienne">valenciennes</option>
+        </select>
+      </p>
+      </fieldset>
+      <fieldset style="width: fit-content;">
+        <label for="metier"> Metier: </label>
+        <select nom="metier" id="metier">
+          <option value="developpeur">Developpeur</option>
+          <option value="technicien">Technicien</option>
+          <option value="informaticien">informaticien</option>
+        </select>
+      </p>
+      <label for="nationalite"> Nationalite: </label>
+      <select nom="pays" id="pays">
+        <option value="francaise">francaise</option>
+        <option value="italienne">italienne</option>
+        <option value="anglaise">anglaise</option>
+      </select>
+      <br /><br />
+      <!--   insertion de la date-->
+      <label> Date de Naissance</label>
+      <input type="date" />
+      <br /><br />
+      <label for="pnaissance"> Pays de Naissance: </label>
+      <select nom="pnaissance" id="pnaissance">
+        <option value="italie">italie</option>
+        <option value="maroc">maroc</option>
+        <option value="france">france</option>
+        <option value="engletaire">engletaire</option>
+      </select>
+      </fieldset>
+      <fieldset style="width: fit-content;">
+      <p>
+        <label> Numero de Securite Social : </label>
+        <input
+          type="text"
+          id="numeroscial"
+          pattern="0-9"
+          {15}
+          placeholder="000 000 000 000   "
+        />
+      </p>
+      <p>
+        <label> Numero du Passeport : </label>
+        <input
+          type="text"
+          id="passport"
+          placeholder="entre votre numero du passeport   "
+        />
+      </p>
+      <p>
+        <label> Date de Delivrance du passeport</label>
+        <input type="date" />
+      </p>
+      <p>
+        <label> Date de validite du passeport</label>
+        <input type="date" />
+      </p>
+      </fieldset><br>
+      <input type="reset" value="Reset" />
+      <input type="submit" value="Sign in" />
+    </form>
+    
+  </center>
+  </body>
+</html>
+Ò
