@@ -6,37 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <center>
-  <body >
+  <body>
     <!-- identification -->
     <form>
       <fieldset style="width: fit-content;">
       <p>
-        <label for="prenom">etrez votre Prenom :</label>
+        <label for="prenom">entrez votre Prenom :</label>
         <input
           type="text"
           id="prenom"
           name="prenom"
           required
-          pattern="[a-z]
-          {25}
-          placeholder="votre prenom"
-        />
+          
+     
+          placeholder="votre prenom">
       </p>
       <p>
-        <label for="name">etrez votre Nom :</label>
+        <label for="name">entrez votre Nom :</label>
         <input
           type="text"
           id="name"
           name="name"
           required
-          pattern="[0-9]
-          {15}
-          placeholder="votre nom"
-        />
+         
+         
+          placeholder="votre nom">
       </p>
       <p>
-        <label for="age">etrez votre Age :</label>
+        <label for="age">entrez votre Age :</label>
         <input type="number" id="age" name="age" required min="0" max="125" />
       </p>
     </fieldset>
@@ -51,19 +48,22 @@
       </p>
       <p>
         <label> Adresse mail : </label>
-        <input type="email" id="email" placeholder="entrez votre email" />
+        <input type="email" id="email" placeholder="entrez votre email" 
+        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}" required/>
+
       </p>
+
       <p>
         <label> Code postale : </label>
         <input
           type="text"
           id="codepostal"
-          pattern="[0-9] 
-          {5}
+          pattern="[0-9]{5}"
+         
           placeholder="00000"
         />
         <label for="ville"> Ville: </label>
-        <select nom="ville" id="pays">
+        <select name="ville" id="ville">
           <option value="lille">lille</option>
           <option value="paris">paris</option>
           <option value="valencienne">valenciennes</option>
@@ -72,14 +72,14 @@
       </fieldset>
       <fieldset style="width: fit-content;">
         <label for="metier"> Metier: </label>
-        <select nom="metier" id="metier">
+        <select name="metier" id="metier">
           <option value="developpeur">Developpeur</option>
           <option value="technicien">Technicien</option>
           <option value="informaticien">informaticien</option>
         </select>
-      </p>
+      
       <label for="nationalite"> Nationalite: </label>
-      <select nom="pays" id="pays">
+      <select name="nationaloite" id="nationalite">
         <option value="francaise">francaise</option>
         <option value="italienne">italienne</option>
         <option value="anglaise">anglaise</option>
@@ -87,10 +87,10 @@
       <br /><br />
       <!--   insertion de la date-->
       <label> Date de Naissance</label>
-      <input type="date" />
+      <input type="date"/>
       <br /><br />
       <label for="pnaissance"> Pays de Naissance: </label>
-      <select nom="pnaissance" id="pnaissance">
+      <select name="pnaissance" id="pnaissance">
         <option value="italie">italie</option>
         <option value="maroc">maroc</option>
         <option value="france">france</option>
@@ -103,9 +103,9 @@
         <input
           type="text"
           id="numeroscial"
-          pattern="0-9"
-          {15}
-          placeholder="000 000 000 000   "
+          pattern="[0-9]{12}"
+          
+          placeholder="000 000 000 000"
         />
       </p>
       <p>
@@ -113,23 +113,21 @@
         <input
           type="text"
           id="passport"
+          pattern="{15}"
           placeholder="entre votre numero du passeport   "
         />
       </p>
       <p>
         <label> Date de Delivrance du passeport</label>
-        <input type="date" />
+        <input type="date"/>
       </p>
       <p>
         <label> Date de validite du passeport</label>
-        <input type="date" />
+        <input type="date"/>
       </p>
       </fieldset><br>
-      <input type="reset" value="Reset" />
-      <input type="submit" value="Sign in" />
+      <input type="reset" value="Reset"/>
+      <input type="submit" value="Sign in"/>
     </form>
-    
-  </center>
   </body>
 </html>
-Ò
